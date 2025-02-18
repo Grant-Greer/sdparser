@@ -95,7 +95,7 @@ fn read_data(iter: &mut Lines<BufReader<File>>) -> String {
 }
 
 fn main() -> std::io::Result<()> {
-    let name = "/Users/rich/Downloads/Compound_000000001_000500000.sdf";
+    let name = "/Users/grant/Downloads/Compound_000000001_000500000.sdf";
     let file = File::open(name)?;
     let reader = BufReader::new(file);
     let records = Records { iter: reader.lines() };
